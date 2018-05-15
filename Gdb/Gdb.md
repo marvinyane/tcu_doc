@@ -1,7 +1,7 @@
-##GDB
-###1. 准备工作
+## GDB
+### 1. 准备工作
 执行`development/scripts/gdbclient`脚本，这个脚本会加载`gdbclient`命令
-###2. 调试运行中的进程
+### 2. 调试运行中的进程
 如果需要调试TCU上正在运行的进程，可以在PC上执行
 
 		gdbclient pid

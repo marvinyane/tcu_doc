@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>index</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap -->
+        <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=yLOxCWiYb5KfFGNdc5XSof7PUVp6X4ob"></script>
+
+        <script src="./js/jquery.js"></script>
+        <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="./js/index.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+
+    <body id="diagnosticbody"> 
+
+    <div id="container" >
+        <div id="menu" class="menu" style="width:10%;float:left; border-right:1px solid #000;">
+        <div id="ThreadAndLooper"><button class="ThreadAndLooperBotton" id='language-ssidCancel' style='width:100%;'>线程和消息队列</button> </div>
+        <div id="Lock"><button class="LockBotton" id='language-ssidCancel' style='width:100%;'>互斥锁</button> </div>
+        <div id="SharedMemory"><button class="SharedMemoryBotton" id='language-ssidCancel' style='width:100%;'>共享内存</button> </div>
+        <div id="Gdb"><button class="GdbBotton" id='language-ssidCancel' style='width:100%;'>GDB</button> </div>
+        <div id="AddressSanitizer"><button class="AddressSanitizerBotton" id='language-ssidCancel' style='width:100%;'>AddressSanitizer</button> </div>
+        <div id="MallocDebug"><button class="MallocDebugBotton" id='language-ssidCancel' style='width:100%;'>本地内存调试</button> </div>
+    </div>
+
+    <div id="content" style="height:100%;width:90%;float:left;">
+        <div id="collapseOne1" class="panel-collapse collapse in">
+            <iframe src="ThreadAndLooper/ThreadAndLooper.html" id="ThreadAndLooperInfo" class="ThreadAndLooperInfo" style="width:100%;display:none" frameborder="0" scrolling="yes"></iframe>
+        </div>
+
+        <div id="collapseOne2" class="panel-collapse collapse in">
+            <iframe src="Lock/Lock.html" id="LockInfo" class="LockInfo" style="width:100%;display:none" frameborder="0" scrolling="yes"></iframe>
+        </div>
+
+        <div id="collapseOne3" class="panel-collapse collapse in">
+            <iframe src="SharedMemory/SharedMemory.html" id="SharedMemoryInfo" class="SharedMemoryInfo" style="width:100%;display:none" frameborder="0" scrolling="yes"></iframe>
+        </div>
+
+        <div id="collapseOne4" class="panel-collapse collapse in">
+            <iframe src="Gdb/Gdb.html" id="GdbInfo" class="GdbInfo" style="width:100%;display:none" frameborder="0" scrolling="yes"></iframe>
+        </div>
+
+        <div id="collapseOne5" class="panel-collapse collapse in">
+            <iframe src="AddressSanitizer/AddressSanitizer.html" id="AddressSanitizerInfo" class="AddressSanitizerInfo" style="width:100%;display:none" frameborder="0" scrolling="yes"></iframe>
+        </div>
+
+        <div id="collapseOne6" class="panel-collapse collapse in">
+            <iframe src="MallocDebug/MallocDebug.html" id="MallocDebugInfo" class="MallocDebugInfo" style="width:100%;display:none" frameborder="0" scrolling="yes"></iframe>
+        </div>
+    </div>
+    </body>
+</html>
